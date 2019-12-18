@@ -1,15 +1,18 @@
 import numpy
 
-compra = 5
-venta = 8
-remate = 4
-ganancia = 3
+#compra = 5
+#venta = 8
+#remate = 4
+#ganancia = 3
+
+compra = int(input("Ingrese el precio de compra:")) 
+venta =  int(input("Ingrese el precio de venta:")) 
+remate =  int(input("Ingrese el precio de remate:"))
+ganancia = int(input("Ingrese el precio de ganancia:"))  
+
 
 F = 5  # Filas
 C = 2  # Columnas
-
-#t1 = 'No. Dias'
-#t2 = 'Demanda'
 
 matrizPeriodico = []
 matrizPagos = []
@@ -17,8 +20,6 @@ columnaDias = []
 columnaDemandas = []
 
 print("Ingrese los valores de la matriz:")
-
-#t = []
 
 #Declarar matriz
 for i in range(F):		 # Ciclo para las filas en la matriz
@@ -53,7 +54,6 @@ for i in range(len(columnaDemandas)):
             matrizPagosT[i][j] = matrizCopia[j][i]-(columnaDemandas[i]-columnaDemandas[j]) 
 
 #EMV
-#for i in range(len(columnaDemandas)):
 columnaEMV = []
 sum = 0
 res = 0
@@ -94,12 +94,8 @@ for i in range(F):
 print()
 print()
 
-
-
 print("EMV")
 for i in range(len(columnaEMV)):
         print(columnaEMV[i], end=" ")
 print()
 print()
-
-#
