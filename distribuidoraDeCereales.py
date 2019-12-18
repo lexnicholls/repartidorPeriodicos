@@ -1,3 +1,5 @@
+from sympy import Integral, integrate
+from sympy.abc import x
 
 #Compra - 20 * kilo
 #Vende - 45 * kilo
@@ -23,5 +25,11 @@ ganancia = venta - compra
 gananciaDemanda = venta - demanda
 perdida = excedente - compra
 
+fD = 1/(limSuperior-limInferior)
+
+
+
+
+#if demanda >= 
 
 print(ganancia,gananciaDemanda,perdida)
